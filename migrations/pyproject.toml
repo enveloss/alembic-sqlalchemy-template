@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "migrations"
+version = "0.1.0"
+description = ""
+authors = ["Enveloss"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+db_toolkit = {path = "../db_toolkit", develop = true}
+alembic = "^1.9.4"
+python-dotenv = "^0.21.1"
+psycopg2-binary = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
